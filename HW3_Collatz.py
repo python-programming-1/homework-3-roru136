@@ -10,10 +10,9 @@ def collatz(num):
         return odd
 
 
-
-print('num:')
-
 while True:
+    print('num:')
+    
     try:
         num_input = int(input())
         if num_input == 1:
@@ -25,8 +24,6 @@ while True:
                     break
                 else:
                     num_input=collatz(num_input)
-        else:
-            print('Enter positive integer to begin')
                       
     except:
         print('Not valid Integer')
